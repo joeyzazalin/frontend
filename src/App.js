@@ -10,6 +10,8 @@ import Popular from './components/Popular/Popular';
 import Item from './components/Item/Item';
 import Offers from './components/Offers/Offers';
 import NewCollection from './components/NewCollection/NewCollection';
+import NewsLetter from './components/NewsLetter/NewsLetter';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -20,6 +22,7 @@ function App() {
       <Item/>
       <Offers/>
       <NewCollection/>
+      <NewsLetter/>
       <Routes>
         <Route path='/' element={<shop/>}/>
         <Route path='/men' element={<ShopCategory category='mens'/>}/>
@@ -31,6 +34,7 @@ function App() {
          <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
